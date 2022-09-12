@@ -1,0 +1,180 @@
+/* Master Styles */
+
+body {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+
+}
+
+/* Nav Styles */
+
+.nav-wrapper
+{
+display: flex;
+justify-content: space-between;
+padding: 20px;
+
+}
+
+.left-side 
+{
+display: flex;
+
+}
+
+.nav-wrapper > .left-side > div
+{
+margin-right: 30px;
+font-size: 0.9em;
+text-transform: uppercase;
+}
+
+.right-side
+{
+
+font-size: 1em;
+text-transform: uppercase;
+}
+
+.brand {
+    font-weight: 900;
+    font-size: larger;
+}
+.brand :hover {
+    color: #8a8a8a;
+    transition: color 0.5s;  
+    }
+
+.nav-link-wrapper 
+{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper :hover {
+border-bottom: 1px solid black;    
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+
+}
+
+.active-nav-link{
+
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a { 
+
+color: black !important;
+}
+
+/* Portfolio Styles */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    margin: 10px;
+
+}
+
+.portfolio-img-background {
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle   {
+    font-weight: 600;
+    transition: 0.5s;
+    color: transparent
+
+}
+.img-text-wrapper .subtitle-link  a {
+    font-weight: 600;
+    transition: 0.5s;
+    color: transparent
+
+}
+
+.img-text-wrapper:hover .subtitle   {
+    font-weight: 600;
+    color: white;
+
+}
+.img-text-wrapper:hover .subtitle-link  a {
+    font-weight: 600;
+    color: white;
+
+}
+
+.img-darken {
+transition: 1s;
+filter: brightness(10%);
+}
+/*About Me*/
+
+.two-column-wrapper
+{
+display: grid;
+grid-template-columns: 0.5fr 1fr;
+background-color: #dddddd;
+}
+
+.profile-image-wrapper img 
+{
+    width: 70%;
+    border-radius: 300px;
+    border: 5px solid #8a8a8a;
+    margin: 50px;  
+
+}
+
+.profile-content-wrapper 
+{
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.profile-content-wrapper h1 {
+    color: #8a8a8a;
+}
