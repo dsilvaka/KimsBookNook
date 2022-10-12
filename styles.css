@@ -46,6 +46,7 @@ text-transform: uppercase;
 .brand {
     font-weight: 900;
     font-size: larger;
+    color: black !important;
 }
 .brand :hover {
     color: #8a8a8a;
